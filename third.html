@@ -6,12 +6,13 @@
 </html>
 <style>
 
-ul
+ul1
 	{list-style-type: none;
-	margin: 0;
+	margin: 10px;
 	padding: 0;
-	width: 200px;
+	width: 120px;
 	background-color: #f1f1f1;
+	float: left;
 	}
 
 li a 
@@ -22,28 +23,113 @@ li a
 	}
 
 li a:hover 
-	{background-color: #555;
+	{background-color: red;
 	color: white;
 	}
 
-.active
-	{background-color: #E6AAF4;
-	color: white;
+.column 
+	{float: left;
+	width: 80%;
 	}
+
+.row:after 
+	{content: "";
+	display: table;
+	clear: both;
+	}
+
+*
+	{box-sizing: border-box;
+	}
+
+header {background-color: #9D9D9D;
+	padding: 30px;
+	téxt-align: middle;
+	font-size: 30px;
+	color: white;
+	 display: flex;
+   	justify-content: center;
+	}
+
+article 
+	{float: left;
+	padding: 20px;
+	width: 70%;
+	background-color: #f1f1f1;
+	font-size: left;
+	color: black;
+	}
+
+section
+	{float: left;
+	background-color: white;
+	padding: 20px;
+	text-align: left;
+	font-size: 20px;
+	color: black;
+	}
+
+
+aside
+	{float: right;
+	background-color: #9D9D9D;
+	padding: 10px;
+	text-align: left;
+	font-size: 20px;
+	color: black;
+	width: 20%;
+	}
+
+footer 
+	{background-color: #9D9D9D;
+	padding: 10px;
+	text-align: center;
+	color: #C6C3C3;
+	line-height: 40px;
+	}
+
+@media (max-width: 600px) {
+	nav, article {
+	width: 100%;
+	height: auto;
+	}}
 
 </style>
 </head>
 <html>
 <body>
 
-<ul>
+<ul1>
 
-<li><a href="https://day1ne.github.io/hi-high" title="Welcome Page">Welcome</a></li>
-<li><a href="https://day1ne.github.io/hi-high/second.html" title="Page 2">Page 2</a></li>
-<li><a href="https://day1ne.github.io/hi-high/third.html" title= "Page 3">Page 3</a></li>
-<li><a href="https://day1ne.github.io/hi-high/layout.html" title="Page 4">Page 4</a></li>
+<li><a href="https://day1ne.github.io/hi-high" title="Welcome Page" target="_blank">Welcome</a></li>
+<li><a href="https://day1ne.github.io/hi-high/second.html" title="Page 2" target="_blank">Page 2</a></li>
+<li><a href="#" onclick="window.location.reload(true);" title= "Page 3" >Page 3</a></li>
+<li><a href="https://day1ne.github.io/hi-high/layout.html" title="Page 4" target="_blank">Page 4</a></li>
 
-</ul>
+</ul1><br>
+
+<div class="row">
+  <div class="column">
+
+<header> Life is not daijoubu </header>
+
+<section> <h2> It indeed is not </h2> <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Et tortor consequat id porta nibh venenatis cras sed. Enim tortor at auctor urna nunc id cursus. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. 
+Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+in voluptate velit esse cillum dolore eu fugiat nulla pariatur. #E6AAF4 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<aside> <ul> <li> Omena </li> <li> Päärynä </li> <li> Appelsiini </li> </ul> </aside>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Non enim praesent elementum facilisis leo vel fringilla. Quis commodo odio aenean sed adipiscing diam donec adipiscing. 
+Volutpat commodo sed egestas egestas fringilla. Rhoncus est pellentesque elit ullamcorper dignissim cras. </p>
+</section>
+
+
+<footer> <p> Thank you for reading. </p> </footer>
+
+</div></div>
 
 </body>
 </html>
