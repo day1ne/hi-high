@@ -1,9 +1,4 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Embedded Style Sheet</title>
-<style>
+
 .row
 	{background-color:black;
 	font-color:white
@@ -49,12 +44,3 @@
 .col-10{flex:0 0 auto;width:83.33333333%}
 .col-11{flex:0 0 auto;width:91.66666667%}
 .col-12{flex:0 0 auto;width:100%}
-
-</style>
-</head>
-<body>
-
-
-
-</body>
-</html>
