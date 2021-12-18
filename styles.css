@@ -3,15 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <title>Embedded Style Sheet</title>
-<style>
 
 .row
 	{background-color:black;
 	font-color:white;
 	}
 
+.col-sm-4
+	{flex:0 0 auto;
+	width:33.33333333%
+	}
 
-</style>
+.com-sm-6
+	{flex:0 0 auto;
+	width:50%
+	}
+
 </head>
 <body>
 
