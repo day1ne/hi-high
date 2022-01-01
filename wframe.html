@@ -5,38 +5,150 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	
 	<title>Wireframe 1</title>
+<style>
 
+.dive {width: 390px;
+	height: 355px;
+	border: 15px solid black;
+	padding: 10px;
+	margin-right: 100px;
+	text-align: center;
+	float:right;
+	position: relative;
+	top: 10px;
+	}
+
+</style>
 </head>
 <body>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Laurea-ammattikorkeakoulun_logo.jpg" class="float:start" style="height:50px; width:50px"
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Laurea-ammattikorkeakoulun_logo.jpg" style="float:left; height:70px; width:70px"> 
+<p style="color:blue ; padding: 20px;float:left"> <b> Welcome to Laurea ! </b></p>
 
-<p style="color:blue"> Welcome to Laurea ! </p>
+<div class="input-group" style="float:right ; width: 20%">
+  <div class="form-outline">
+    <input type="search" id="form1" class="form-control" />
+    <label class="form-label" for="form1">Search</label>
+  </div>
+  <button type="button" class="btn btn-primary">
+    <i class="fas fa-search"></i>
+  </button>
+</div>
+
 <br>
-<h1> Welcome ! This is not an official site of Laurea <h1>
 
-https://youtu.be/GwtaEhHq_To
+<nav aria-label="breadcrumb" style="font-size:12px ; padding:20px ; float:right">
+    <ol class="breadcrumb">
+	<li class="breadcrumb-item active" aria-current="page"> Front-page
+      	</li>
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <li class="breadcrumb-item">
+        <a href="https://day1ne.github.io/hi-high/wframe2.html">About us</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="https://day1ne.github.io/hi-high/wframe3.html">Contact</a>
+      </li>
+    </ol>
+  </nav>
+
+<br>
+<br>
+<br>
+
+<h1 style="font-size:2vw;padding:25px"> Welcome ! This is not an official site of Laurea </h1>
+
+
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+<div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+</div>
+
 <div class="carousel-inner">
-<div class="carousel-item active">
-<div class= "modal-fullscreen-lg-down" src="https://youtu.be/GwtaEhHq_To" alt="Video 1">
+	<div class="carousel-item active">
+	<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item" src="https://youtu.be/GwtaEhHq_To" allowfullscreen></iframe>
+	</div>
+
+	<div class="carousel-item active">
+	<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item" src="https://youtu.be/y6AHXDDpURc" allowfullscreen></iframe>
+	</div>
+
+	<div class="carousel-item active">
+	<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item" src="https://youtu.be/8dVQ0813KVM" allowfullscreen></iframe>
+	</div>
 </div>
-<div class="carousel-item">
-<div class= "modal-fullscreen-lg-down" src="https://youtu.be/hkEHqTqwjSc" alt="Video 2">
 </div>
 </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<hr>
+
+<h2 style="margin-left:150px;font-size:26px"> <b> Info (no links for now) </b></h2>
+
+<img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202010/maps_googlgele_pixabay_1200x768.png?vXgW9nRReRyeF4SYJl5JM2BvaQ_XCHzb&size=770:433" 
+alt="Location" height="120" width="150" style="margin-left: 150px; margin-top: 30px; border: solid; float: left">
+
+<br>
+
+<p style= "color: gray; margin-left: 330px" > <b> Location </b> </p>
+
+<div class="dive"> Advertisement </div>
+
+<br>
+<br>
+<br>
+<br>
+
+<img src="https://docplayer.fi/docs-images/41/8422230/images/page_9.jpg" alt="Campuses" height="120" width="150"
+style="margin-left: 150px; margin-top: 30px; border: solid; float: left">
+
+<br>
+
+<p style= "color: gray; margin-left: 330px" > <b> Our Campuses </b> </p>
+
+<br>
+<br>
+<br>
+<br>
+
+<img src="https://cdn.statcdn.com/Statistic/1010000/1013084-blank-754.png" alt="Applying students" height="120" width="150"
+style="margin-left: 150px; margin-top: 30px; border: solid; float: left">
+
+<br>
+
+<p style= "color: gray; margin-left: 330px" > <b> For Applying Students </b> </p>
+
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+<p style= "display: inline; margin-left: 30px; font-size: 12px;"> Laurea Wireframe Practice &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp; 2021 </p>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:inline; float:right; margin-right: 50px" width="30" height="30" fill="currentColor" class="bi bi-chat-text-fill" viewBox="0 0 16 16">
+  <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+</svg> 
+
+<p style="display: inline; float: right; font-size:15px"> Help Chat </p>
+
 </body>
 </html>
